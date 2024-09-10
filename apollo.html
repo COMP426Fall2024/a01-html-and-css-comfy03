@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythological Creatures - Apollo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="select-container">
+        <label for="page-select">Choose a god:</label>
+        <select id="page-select" onchange="navigateToPage(this.value)">
+            <option value="index.html">Home</option>
+            <option value="zues.html">Zeus</option>
+            <option value="hera.html" >Hera</option>
+            <option value="posiden.html">Poseidon</option>
+            <option value="athena.html">Athena</option>
+            <option value="apollo.html" selected>Apollo</option>
+            <option value="artemis.html">Artemis</option>
+        </select>
+    </div>
+    <div class="apollo_top_bar">
+        <div class="apollo_header">
+            <h4><a href="index.html">Apollo</a></h4>
+        </div>
+    </div>
+
+    <div class="pokemon-card">
+        <div class="card-details">
+            <h2>Pokémon coming soon...</h2>
+        </div>
+    </div>
+</div>
+<script>
+    function navigateToPage(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythological Creatures - Artemis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="select-container">
+        <label for="page-select">Choose a god:</label>
+        <select id="page-select" onchange="navigateToPage(this.value)">
+            <option value="index.html">Home</option>
+            <option value="zues.html">Zeus</option>
+            <option value="hera.html" >Hera</option>
+            <option value="posiden.html">Poseidon</option>
+            <option value="athena.html">Athena</option>
+            <option value="apollo.html">Apollo</option>
+            <option value="artemis.html" selected>Artemis</option>
+        </select>
+    </div>
+    <div class="artemis_top_bar">
+        <div class="artemis_header">
+            <h4><a href="index.html">Artemis</a></h4>
+        </div>
+    </div>
+
+    <div class="pokemon-card">
+        <div class="card-details">
+            <h2>Pokémon coming soon...</h2>
+        </div>
+    </div>
+</div>
+
+<script>
+    function navigateToPage(page) {
+        window.location.href = page;
+    }
+</script>
+</body>
+</html>
