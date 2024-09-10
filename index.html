@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Mythological Creatures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="top_bar">
+    <div class="title-box">
+        <h1>Greek Gods</h1>
+        <h2>Pokemon Edition</h2>
+    </div>
+</div>
+<div class="select-container">
+    <label for="page-select">Choose a god:</label>
+    <select id="page-select" onchange="navigateToPage(this.value)">
+        <option value="index.html">Home</option>
+        <option value="zues.html">Zeus</option>
+        <option value="hera.html">Hera</option>
+        <option value="posiden.html">Poseidon</option>
+        <option value="athena.html">Athena</option>
+        <option value="apollo.html">Apollo</option>
+        <option value="artemis.html">Artemis</option>
+    </select>
+</div>
+<div class="gods_list">
+    <div class="Zues">
+        <h3><a href="zues.html"> Zeus </a></h3>
+        <img src="images/zeus-7683518_1920.jpg" alt="Zeus" width="300" height="200">
+        <p> "Mortals, behold the power of the heavens! My will commands the skies, and with a single strike, I remind all of the strength of the gods." </p>
+    </div>
+    <div class="Hera">
+        <h3><a href="hera.html">Hera</a></h3>
+        <img src="images/hera.jpg" alt="Hera" height="300" width="200">
+        <p> "Strength is not only found in power, but in loyalty, wisdom, and the unyielding will to protect what is rightfully mine. I am the queen, and none shall challenge my place." </p>
+    </div>
+    <div class="posiden">
+        <h3><a href="posiden.html">Posiden</a></h3>
+        <img src="images/posiden.jpg" alt="poseiden" width="300" height="200">
+        <p>"Tremble before the depths, for I am the ruler of the seas. With my trident, I command the tides and unleash the fury of the ocean upon those who defy me." </p>
+    </div>
+    <div class="Athena">
+        <h3><a href="athena.html">Athena</a></h3>
+        <img src="images/athena-8923202_1920.png" alt="athena" height="200" width="300">
+        <p>"True wisdom is born of courage and strategy. I am the protector of justice, the mind behind victory. In times of peace or war, it is intellect, not brute force, that will triumph."</p>
+    </div>
+    <div class="Apollo">
+        <h3><a href="apollo.html">Apollo</a></h3>
+        <img src="images/apollo.png" alt="Apollo" height="200" width="300">
+        <p>"I am the light that chases away darkness, the harmony that guides the arts. With my bow, I strike true, and with my lyre, I inspire. Through me, knowledge, healing, and music flow like the sun’s eternal rays."</p>
+    </div>
+    <div class="Artemis">
+        <h3><a href="artemis.html">Artemis</a></h3>
+        <img src="images/artemis.png" alt="artemis" height="200" width="300">
+        <p>"I am the huntress, swift and untamed. The moon guides my path, and the wilderness answers my call. Those who seek harmony with nature will find my favor; those who defy it will face my wrath."</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="list-container">
+        <h2>Gods Requested</h2>
+        <ul>
+            <li>Hades</li>
+            <li>Ares</li>
+            <li>Aphrodite</li>
+            <li>Hephaestus</li>
+            <li>Dionysus</li>
+        </ul>
+    </div>
+
+    <div class="table-container">
+        <table class="stats-table">
+            <thead>
+            <tr>
+                <th>God</th>
+                <th>HP</th>
+                <th>Attack</th>
+                <th>Defense</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Zeus</td>
+                <td>1000</td>
+                <td>300</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Hera</td>
+                <td>1200</td>
+                <td>350</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Poseidon</td>
+                <td>900</td>
+                <td>400</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td>Athena</td>
+                <td>Coming Soon</td>
+                <td>Coming Soon</td>
+                <td>Coming Soon</td>
+            </tr>
+            <tr>
+                <td>Apollo</td>
+                <td>Coming Soon</td>
+                <td>Coming Soon</td>
+                <td>Coming Soon</td>
+            </tr>
+            <tr>
+                <td>Artemis</td>
+                <td>Coming Soon</td>
+                <td>Coming Soon</td>
+                <td>Coming Soon</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function navigateToPage(page) {
+        window.location.href = page;
+    }
+</script>
+</body>
+</html>

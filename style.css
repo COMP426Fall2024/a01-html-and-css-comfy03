@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Indie Flower', sans-serif;
+    background-color: #e6e6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Anchor Styles */
+a {
+    text-decoration: none;
+}
+
+.top_bar {
+    background-color: #333;
+    padding: 15px;
+    border: 3px solid #121111;
+    border-radius: 50px;
+    width: 600px;
+    text-align: center;
+    margin: 40px auto 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.title-box h1, .title-box h2 {
+    margin: 5px 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.title-box h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.title-box h2 {
+    font-size: 24px;
+    color: #f7e8a1;
+}
+
+.zues_top_bar, .hera_top_bar, .poseidon_top_bar, .apollo_top_bar, .artemis_top_bar, .athena_top_bar {
+    background-color: #333;
+    padding: 10px;
+    border: 3px solid #121111;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.zues_header a, .hera_header a, .poseidon_header a, .apollo_header a, .artemis_header a, .athena_header a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+
+}
+
+.zues_header a:hover, .hera_header a:hover, .poseidon_header a:hover, .apollo_header a:hover, .artemis_header a:hover, .athena_header a:hover {
+    color: #f7e8a1;
+}
+
+.pokemon-card {
+    width: 320px;
+    height: 550px;
+    border-radius: 15px;
+    background-color: #f7e8a1;
+    border: 2px solid #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-header, .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.pokemon-name {
+    font-size: 24px;
+    color: #095a73;
+    font-family: 'Pacifico', cursive;
+}
+
+.pokemon-hp {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.pokemon-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: 10px 0;
+}
+
+.card-details {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: left;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.card-details h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-details p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.attack-power, .defense-power {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.gods_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.gods_list div {
+    border: 3px solid #000000;
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.gods_list h3 {
+    font-size: 20px;
+}
+
+.title-box h1, .title-box h2 {
+    margin: 5px 0;
+}
+
+.title-box h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.title-box h2 {
+    font-size: 24px;
+    color: #f7e8a1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.list-container {
+    width: 45%;
+}
+
+.list-container h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.list-container ul {
+    list-style-type: square;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+}
+
+.list-container ul li {
+    margin-bottom: 8px;
+}
+
+.stats-table {
+    background-color: #f7e8a1;
+    border-collapse: collapse;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.stats-table th, .stats-table td {
+    border: 1px solid #000;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.stats-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.stats-table td {
+    background-color: #f7e8a1;
+}
+
+.table-container {
+    width: 45%;
+}

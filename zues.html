@@ -3,55 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mythological Creatures - Hera</title>
+    <title> Mythological Creatures - Zeus</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
+
 <div class="main-wrapper">
+
     <div class="select-container">
         <label for="page-select">Choose a god:</label>
         <select id="page-select" onchange="navigateToPage(this.value)">
             <option value="index.html">Home</option>
-            <option value="zues.html">Zeus</option>
-            <option value="hera.html" selected>Hera</option>
+            <option value="zues.html" selected>Zeus</option>
+            <option value="hera.html">Hera</option>
             <option value="posiden.html">Poseidon</option>
             <option value="athena.html">Athena</option>
             <option value="apollo.html">Apollo</option>
             <option value="artemis.html">Artemis</option>
         </select>
     </div>
-    <div class="hera_pokemon">
-        <div class="hera_top_bar">
-            <div class="hera_header">
-                <h4><a href="index.html">Hera</a></h4>
+    <div class="zues_pokemon">
+        <div class="zues_top_bar">
+            <div class="zues_header">
+                <h4><a href="index.html">Zeus</a></h4>
             </div>
         </div>
 
         <div class="pokemon-card">
             <div class="card-header">
-                <h1 class="pokemon-name">Queen of Olympus</h1>
-                <p class="pokemon-hp">HP 1200</p>
+                <h1 class="pokemon-name">Skybringer</h1>
+                <p class="pokemon-hp">HP 1000</p>
             </div>
 
             <div class="pokemon-image">
-                <img src="images/hera_pokemon.jpeg" alt="Mythological Creature Image">
+                <img src="images/zeus%20pokemon.jpeg" alt="Mythological Creature Image">
             </div>
 
             <div class="card-details">
                 <h2>Abilities</h2>
-                <p><strong>Divine Judgment:</strong> Hera can deliver a powerful divine attack, dealing 180 damage to all enemies.</p>
-                <p><strong>Protector's Grace:</strong> Restores 15% of health to all allies.</p>
+                <p><strong>Thunder Strike:</strong> Zeus can call down lightning, dealing 150 damage to all enemies.</p>
+                <p><strong>Sky Fury:</strong> A gust of wind reduces enemy attack power by </p>
             </div>
 
             <div class="card-footer">
-                <p class="attack-power">Attack: 350</p>
-                <p class="defense-power">Defense: 300</p>
+                <p class="attack-power">Attack: 300</p>
+                <p class="defense-power">Defense: 250</p>
             </div>
         </div>
     </div>
 </div>
+
 <script>
     function navigateToPage(page) {
         window.location.href = page;
